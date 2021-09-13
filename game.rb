@@ -153,7 +153,7 @@ def save_game(hangman)
   end
   
 def load_game
-    game_file = YAML.safe_load(File.open("lib/saved.yaml", 'r'))
+    game_file = YAML.safe_load(File.open("saved.yaml", 'r'))
   
     secret_word = game_file['secret_word']
     hidden_word = game_file['hidden_word']
